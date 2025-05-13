@@ -1,0 +1,128 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+nav img {
+    width: 130px;
+    padding-left: 13%;
+}
+
+nav ul {
+    list-style: none;
+    padding-right: 10%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 18PX;
+}
+
+#busel {
+    padding-right: 150px;
+}
+
+nav button {
+    border: none;
+    background-color: #6d46db;
+    width: 70px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+nav select {
+    width: 180px;
+    height: 35px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f7f7fb;
+}
+
+#saytomore {
+    display: block;
+    padding: 20px 80px;
+    justify-content: center;
+}
+
+#saytomore img {
+    padding-left: 140px;
+    padding-top: 40px;
+}
+
+#forut {
+    text-align: center;
+    font-size: 26px;
+    padding: 0 160px 10px 280px;
+}
+
+#img3-4 {
+    margin-left: 40%;
+}
+
+#parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 36%;
+    margin-bottom: 30%;
+}
+
+#child {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#newdimensionblack{
+    background-color: black;
+}
+
+#dimension1 img {
+    width: 78%;
+    padding: 0 11.2% 15%;
+    margin-top: -25%;
+}
+
+#dimension2 {
+    color: #d6bdfb;
+    font-size: 30px;
+    text-align: center;
+}
+
+#dimension3 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 0 6%;
+}
+
+#dimension4 {
+    padding: 0 10% 9%;
+}
+
+#dimension5 {
+    color: #ffcca4;
+    font-size: 30px;
+    text-align: center;
+}
+
+#dimension6 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 3% 6%;
+}
+
+#dimension7 {
+    padding: 0 10%;
+}
+
+
+
+
+
+
