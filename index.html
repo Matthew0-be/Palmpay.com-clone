@@ -1,23 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PALMPAY.COM</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            flex-wrap: wrap;
+        }
+
+        nav img {
+            width: 130px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        nav ul li {
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        #busel {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav button {
+            border: none;
+            background-color: #6d46db;
+            width: 70px;
+            height: 40px;
+            border-radius: 30px;
+            color: white;
+        }
+
+        nav select {
+            width: 150px;
+            height: 35px;
+            border: none;
+            border-radius: 30px;
+            background-color: #f7f7fb;
+        }
+
+        #saytomore img {
+            width: 90%;
+            display: block;
+            margin: 30px auto;
+        }
+
+        #forut {
+            text-align: center;
+            font-size: 20px;
+            padding: 0 20px;
+        }
+
+        #img3-4 {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        #parent {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        #child {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #newdimensionblack {
+            background-color: black;
+            color: white;
+            padding: 40px 5%;
+        }
+
+        #dimension1 img,
+        #dimension4 img,
+        #dimension7 img {
+            width: 100%;
+            display: block;
+            margin: 20px 0;
+        }
+
+        #dimension2,
+        #dimension5 {
+            color: #ffcca4;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        #dimension3,
+        #dimension6 {
+            text-align: center;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .madrok,
+        .asgard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f7f7fb;
+            margin: 40px auto;
+            width: 50%;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .madrok img,
+        .asgard img {
+            width: 100%;
+            max-height: 300px;
+            border-radius: 20px;
+        }
+
+        .madrok h1,
+        .asgardian h1 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .madrok p,
+        .asgardian p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .asgardian {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .asgardian button {
+            background-color: #6d46db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        .join {
+            background-color: #6d46db;
+            background-image: url('/image/wiki world1 (17).png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        .join h2 {
+            font-size: 24px;
+        }
+
+        .footer-contain {
+            background-color: black;
+            color: white;
+            padding: 40px 5%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footing,
+        .footing2,
+        .footing3,
+        .footing4,
+        .footing5 {
+            list-style: none;
+        }
+
+        .footing li img {
+            width: 30px;
+            margin-top: 10px;
+        }
+
+        .footing2 li,
+        .footing3 li,
+        .footing4 li,
+        .footing5 li {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        @media (min-width: 768px) {
+            nav {
+                flex-wrap: nowrap;
+            }
+
+            .madrok,
+            .asgard {
+                flex-direction: row;
+                justify-content: space-between;
+                height: auto;
+            }
+
+            .madrok img,
+            .asgard img {
+                width: 50%;
+            }
+
+            .madrok div,
+            .asgardian {
+                width: 45%;
+            }
+
+            .join {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .more,
+            .rome {
+                width: 10%;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <nav id="nav">
         <img src="/image/logo.e481427a.png" alt="">
         <ul id="navcontent">
-            <li>personal</li>
-            <li>Business</li>
-            <li>Company</li>
-            <li>Developer</li>
-            <li>Pricing</li>
+            <li class="navres1">personal</li>
+            <li class="navres1">Business</li>
+            <li class="navres1">Company</li>
+            <li class="navres1">Developer</li>
+            <li class="navres1">Pricing</li>
         </ul>
         <div id="busel">
-            <button>Log in</button>
+            <button class="navres1">Log in</button>
             <select name="Country" id="Country">
                 <option value="Nigeria">Nigeria</option>
                 <option value=""></option>
@@ -32,7 +281,8 @@
     </div>
 
     <div id="forut">
-        <p>Seamlessly send and receive money, effortlessly pay your bills, shop anywhere with ease, and take full control of your finances - all in PalmPay</p>
+        <p>Seamlessly send and receive money, effortlessly pay your bills, shop anywhere with ease, and take full
+            control of your finances - all in PalmPay</p>
     </div>
 
     <div id="img3-4">
@@ -43,7 +293,7 @@
     <div id="parent">
         <div id="child">
             <p>Licenced by CBN as a MMO</p>
-            <img src="/image/centralBankBlack.9c697f56.png" alt="" width="20px" >
+            <img src="/image/centralBankBlack.9c697f56.png" alt="" width="20px">
         </div>
 
         <div id="child">
@@ -60,7 +310,8 @@
             <h1>Do more with your money</h1>
         </div>
         <div id="dimension3">
-            <p>More than just transferring money. You can do all kinds of cool stuff - pay you bills, make purchase, save and earn, all financial needs in one PalmPay app.</p>
+            <p>More than just transferring money. You can do all kinds of cool stuff - pay you bills, make purchase,
+                save and earn, all financial needs in one PalmPay app.</p>
         </div>
         <div id="dimension4">
             <img src="/image/do more with your money.png" alt="" width="100%">
@@ -69,7 +320,9 @@
             <h1>Earn as you spend with rewards</h1>
         </div>
         <div id="dimension6">
-            <p>With PalmPay, every expense becomes an opportunity to save. Unlock exclusive discounts and cashback rewards with transaction you make. Embrace cashless payment and make every payment count with PalmPay.</p>
+            <p>With PalmPay, every expense becomes an opportunity to save. Unlock exclusive discounts and cashback
+                rewards with transaction you make. Embrace cashless payment and make every payment count with PalmPay.
+            </p>
         </div>
         <div id="dimension7">
             <img src="/image/earn as you spend with rewards.png" alt="" width="100%">
@@ -77,17 +330,20 @@
     </div>
 
     <div class="madrok">
-            <img src="/image/ndic food securit.png" alt="">
+        <img src="/image/ndic food securit.png" alt="">
         <div>
             <h1>Your privacy and security is our top priority</h1>
-            <p>PalmPay is fully licensed as a Mobile Money Operator by CBN, and insured by NDIC. We manage customers' funds in compliance with all application regulations. This means that our more than 30 million users and millions of businesses are protected.</p>
+            <p>PalmPay is fully licensed as a Mobile Money Operator by CBN, and insured by NDIC. We manage customers'
+                funds in compliance with all application regulations. This means that our more than 30 million users and
+                millions of businesses are protected.</p>
         </div>
     </div>
 
     <div class="asgard">
         <div class="asgardian">
             <h1>We are happy to help</h1>
-            <p>Browse topics, find resources, or chat with customer service. PalmPay support has answers to all your questions. Have an inquiry, or need Customer Service assistance?</p>
+            <p>Browse topics, find resources, or chat with customer service. PalmPay support has answers to all your
+                questions. Have an inquiry, or need Customer Service assistance?</p>
             <p>Call us: +234 2018886888</p>
             <p>Email: support@palmpay.com</p>
             <a href="#"><button>Contact</button></a>
@@ -119,7 +375,7 @@
 
         <div class="footing3">
             <li><b>Business</b></li>
-            <li>Payin</li>
+            <li>Paying</li>
             <li>Payout</li>
             <li>Pos</li>
             <li>pay with Transfer</li>
@@ -142,4 +398,5 @@
         </div>
     </footer>
 </body>
+
 </html>
